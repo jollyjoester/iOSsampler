@@ -26,7 +26,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    ADBannerView *adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
+    adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
+    [self.view addSubview:adView];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,6 +38,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - iAd delegate method
+
 
 /*
 #pragma mark - Navigation

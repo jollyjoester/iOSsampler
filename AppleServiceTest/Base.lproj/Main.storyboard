@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="530" y="-84"/>
         </scene>
-        <!--View Controller - iAd-->
+        <!--Ad View Controller - iAd-->
         <scene sceneID="8uR-oe-NNi">
             <objects>
-                <viewController id="oxv-pr-Ayw" sceneMemberID="viewController">
+                <viewController id="oxv-pr-Ayw" customClass="IAdViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S7h-s5-X3T"/>
                         <viewControllerLayoutGuide type="bottom" id="Bv7-Kt-pKF"/>
@@ -80,7 +80,24 @@
                     <view key="view" contentMode="scaleToFill" id="jFt-dK-Q6s">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="6h4-Ia-nTO">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="G4R-cR-32K"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="oxv-pr-Ayw" id="nPX-Lr-cMU"/>
+                                </connections>
+                            </adBannerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6h4-Ia-nTO" firstAttribute="leading" secondItem="jFt-dK-Q6s" secondAttribute="leading" id="GLG-dQ-2IF"/>
+                            <constraint firstItem="Bv7-Kt-pKF" firstAttribute="top" secondItem="6h4-Ia-nTO" secondAttribute="bottom" id="LaT-MP-FsW"/>
+                            <constraint firstAttribute="trailing" secondItem="6h4-Ia-nTO" secondAttribute="trailing" id="NMG-wg-Iu3"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="iAd" id="xlC-jX-gSX"/>
                 </viewController>

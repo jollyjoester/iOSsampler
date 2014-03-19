@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <iAd/iAd.h>
 
-@interface IAdViewController : ViewController
+@interface IAdViewController : ViewController <ADBannerViewDelegate>
 
 @end

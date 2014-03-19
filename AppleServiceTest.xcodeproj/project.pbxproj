@@ -24,6 +24,7 @@
 		6245693818D8E78B00D1834F /* GameCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6245693718D8E78B00D1834F /* GameCenterViewController.m */; };
 		6245693B18D8E79F00D1834F /* IAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6245693A18D8E79F00D1834F /* IAdViewController.m */; };
 		6245693D18D8ED9900D1834F /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6245693C18D8ED9900D1834F /* GameKit.framework */; };
+		6245693F18D929DC00D1834F /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6245693E18D929DC00D1834F /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		6245693918D8E79F00D1834F /* IAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAdViewController.h; sourceTree = "<group>"; };
 		6245693A18D8E79F00D1834F /* IAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAdViewController.m; sourceTree = "<group>"; };
 		6245693C18D8ED9900D1834F /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		6245693E18D929DC00D1834F /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6245693F18D929DC00D1834F /* iAd.framework in Frameworks */,
 				6245693D18D8ED9900D1834F /* GameKit.framework in Frameworks */,
 				6245690418D8E56C00D1834F /* CoreGraphics.framework in Frameworks */,
 				6245690618D8E56C00D1834F /* UIKit.framework in Frameworks */,
@@ -110,6 +113,7 @@
 		6245690018D8E56C00D1834F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6245693E18D929DC00D1834F /* iAd.framework */,
 				6245693C18D8ED9900D1834F /* GameKit.framework */,
 				6245690118D8E56C00D1834F /* Foundation.framework */,
 				6245690318D8E56C00D1834F /* CoreGraphics.framework */,
