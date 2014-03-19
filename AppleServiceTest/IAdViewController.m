@@ -27,10 +27,11 @@
 {
     [super viewDidLoad];
     
-    ADBannerView *adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
+    /* コードでiAdを追加する場合
+    ADBannerView *adView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 100, 320, 50)];
     adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
     [self.view addSubview:adView];
-    
+    */
 }
 
 - (void)didReceiveMemoryWarning
